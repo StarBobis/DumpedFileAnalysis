@@ -1,6 +1,7 @@
 import configparser
 
 
+# used for read config from Config.ini
 class GlobalConfig:
     WorkingGame = ""
     AutoBackup = False
@@ -31,6 +32,35 @@ class GlobalConfig:
         print("WriteLog: " + self.WriteLog)
         print("LogFolder: " + self.LogFolder)
         print("DeleteOutputFolder: " + self.DeleteOutputFolder)
+
+
+# used for wrap a single Element in every gametype.ini, eg:GIBody.ini
+class D3D11Element:
+    semantic = ""
+    extract_semantic = ""
+    semantic_index = 0
+    format = ""
+    byte_width = 0
+    extract_slot = ""
+    extract_tech = ""
+    category = ""
+    input_slot = 0
+    input_slot_class = ""
+    instance_data_step_rate = 0
+
+
+# used for read Setting.ini at every game folder.
+class SettingConfig:
+    Engine = ""
+    LoaderFolder = ""
+    OutputFolder = ""
+    FrameAnalyseFolder = ""
+    ModName = ""
+    DrawIB = ""
+
+
+class TmpConfig:
+    pass
 
 
 if __name__ == "__main__":

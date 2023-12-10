@@ -1,10 +1,12 @@
-# 3Dmigoto-Tailor
+# NMBT-Community
 Python scripts for making 3D game mod with 3Dmigoto.
+
+This repository is a community version of my close source mod tool NMBT.
 
 # How to use
 Please always use released version,main branch is only used in developing and may have bug (but also new features).
 
-3Dmigoto-Tailor is highly recommend to use with PyCharm Community or VSCode,and it will save you a lot of time,
+NMBT-Community is highly recommend to use with PyCharm Community or VSCode,and it will save you a lot of time,
 but you can also use notepad to edit config and right click to run if you don't care it is cumbersome.
 
 (Pycharm Download link: https://www.jetbrains.com/pycharm/download/?section=windows)
@@ -22,7 +24,7 @@ https://discord.gg/JEcWVKr7wu
 
 
 # Acknowledgements
-Without their original 3dmigoto repository the 3Dmigoto-Tailor repository is meanless. 
+Without their original 3dmigoto repository the NMBT-Community repository is meanless. 
 
 Huge thanks to Chiri,DarkStarSword,bo3b and 3Dmigoto original author group.
 
