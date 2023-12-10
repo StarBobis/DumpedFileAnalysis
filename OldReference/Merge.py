@@ -1,4 +1,4 @@
-from TailorUtil import *
+from Util import *
 
 
 def get_first_real_index_from_trianglelist_indices(element_name_test, input_trianglelist_indices, tmp_max_vertex_count):

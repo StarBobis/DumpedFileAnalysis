@@ -19,7 +19,7 @@ def get_latest_folder():
 
 split_str = "----------------------------------------------------------------------------------------------------------"
 global_config = configparser.ConfigParser()
-global_config.read("global_config.ini", "utf-8")
+global_config.read("Config.ini", "utf-8")
 config_folder = global_config["Global"]["config_folder"]
 
 preset_config = configparser.ConfigParser()

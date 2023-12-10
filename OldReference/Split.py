@@ -1,4 +1,4 @@
-from TailorUtil import *
+from Util import *
 
 texture_check_slots = preset_config["Slot"]["texture_check_slots"].split(",")
 ignore_tangent = preset_config["Split"].getboolean("ignore_tangent")
