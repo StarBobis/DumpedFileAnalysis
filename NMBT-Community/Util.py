@@ -56,11 +56,43 @@ class SettingConfig:
     OutputFolder = ""
     FrameAnalyseFolder = ""
     ModName = ""
-    DrawIB = ""
+    DrawIBList = []
+
+    ReadIBFormat = ""
+    WriteIBFormat = ""
+    TANGENT = ""
+
+    BlendSlot = ""
+    BlendOriginalSlot = ""
+    VSCheck = False
+    VSCheckSlots = []
+
+    RGBA_R = -1
+    RGBA_G = -1
+    RGBA_B = -1
+    RGBA_A = -1
+
+    SemanticNameD3D11ElementDict = {}
+    ExtractSemanticNameD3D11ElementDict = {}
+
+    def __init__(self):
+        pass
+
+    def show(self):
+        pass
 
 
 class TmpConfig:
     pass
+
+    def __init__(self):
+        pass
+
+    def show(self):
+        pass
+
+    def save(self):
+        pass
 
 
 if __name__ == "__main__":
