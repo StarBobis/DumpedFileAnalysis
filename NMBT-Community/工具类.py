@@ -54,6 +54,8 @@ class 游戏配置类:
     加载器文件夹 = ""
     输出文件夹 = ""
     帧分析文件夹 = ""
+    工作目录 = ""
+
     模组名称 = ""
     绘制索引缓冲区哈希值与提取类型 = ""
 
@@ -74,15 +76,55 @@ class 游戏配置类:
     语义_D3D11元素类字典 = {}
     提取语义_D3D11元素类字典 = {}
     帧分析文件列表 = []
-    工作目录 = ""
     纹理目录 = ""
     独特纹理目录 = ""
 
-    def __init__(self):
-        pass
+    def __init__(self, 游戏名称):
+        游戏配置路径 = "游戏配置/" + 游戏名称 + "/配置.json"
+        with open(游戏配置路径, 'r', encoding='utf-8') as file:
+            游戏配置数据 = json.load(file)
 
-    def show(self):
-        pass
+        self.引擎 = 游戏配置数据["通用配置"]["引擎"]
+        self.加载器文件夹 = 游戏配置数据["通用配置"]["加载器文件夹"]
+        self.输出文件夹 = 游戏配置数据["通用配置"]["输出文件夹"]
+        self.帧分析文件夹 = 游戏配置数据["通用配置"]["帧分析文件夹"]
+
+
+
+
+    def 让我康康(self):
+        print("引擎: " + self.引擎)
+        print("加载器文件夹: " + self.加载器文件夹)
+        print("输出文件夹: " + self.输出文件夹)
+        print("帧分析文件夹: " + self.帧分析文件夹)
+        print("工作目录: " + str(self.工作目录))
+
+        print("模组名称: " + self.模组名称)
+        print("绘制索引缓冲区哈希值与提取类型: " + self.绘制索引缓冲区哈希值与提取类型)
+
+        print("读入索引缓冲区格式: " + self.读入索引缓冲区格式)
+        print("输出索引缓冲区格式: " + self.输出索引缓冲区格式)
+        print("切线算法: " + self.切线算法)
+
+        print("混合槽位: " + self.混合槽位)
+        print("原混合槽位: " + self.原混合槽位)
+        print("顶点着色器检查: " + str(self.顶点着色器检查))
+        print("顶点着色器检查列表: " + str(self.顶点着色器检查列表))
+
+        print("红: " + str(self.红))
+        print("绿: " + str(self.绿))
+        print("蓝: " + str(self.蓝))
+        print("阿尔法: " + str(self.阿尔法))
+
+        print("语义_D3D11元素类字典: " + str(self.语义_D3D11元素类字典))
+        print("提取语义_D3D11元素类字典: " + str(self.提取语义_D3D11元素类字典))
+        print("帧分析文件列表: " + str(self.帧分析文件列表))
+        print("纹理目录: " + str(self.纹理目录))
+        print("独特纹理目录: " + str(self.独特纹理目录))
+
+
+
+
 
     def find_filename_with_condition(self, search_str, suffix_str, search_folder=""):
         pass
@@ -101,12 +143,6 @@ class TmpConfig:
         pass
 
 
-if __name__ == "__main__":
-    pass
-    # Test for GlobalConfig class
-    全局配置类 = 全局配置类()
-    全局配置类.让我康康()
 
-    # Test for
 
 
