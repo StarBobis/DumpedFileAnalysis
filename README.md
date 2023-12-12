@@ -1,31 +1,26 @@
-# NMBT-Community
-Python scripts for making 3D game mod with 3Dmigoto.
+# NMBT-社区版
+一些用来制作3Dmigoto 模组的Python脚本
 
-This repository is a community version of my close source mod tool NMBT.
+# 如何使用
+尽量使用Release里的版本，因为main里面正在开发
 
-# How to use
-Please always use released version,main branch is only used in developing and may have bug (but also new features).
+非常推荐使用PyCharm或者VSCode去运行代码，除非你不觉得使用系统自带的笔记本比较麻烦
 
-NMBT-Community is highly recommend to use with PyCharm Community or VSCode,and it will save you a lot of time,
-but you can also use notepad to edit config and right click to run if you don't care it is cumbersome.
+(Pycharm 下载地址: https://www.jetbrains.com/pycharm/download/?section=windows)
 
-(Pycharm Download link: https://www.jetbrains.com/pycharm/download/?section=windows)
-(Visual Studio Code Download link: https://code.visualstudio.com/)
+(Visual Studio Code 下载地址: https://code.visualstudio.com/)
 
-Recommend Enviorment:
-- Windows 10 or 11 
+推荐开发环境
+- Windows 10 or 11 专业版
 - Pycharm Community or Visual Studio Code
-- Python 3.9.x or later
+- Python 3.9.x 以上的版本
 
 
-# Community
-3Dmigoto mod community
+# 抱团水群
 https://discord.gg/JEcWVKr7wu
 
 
-# Acknowledgements
-Without their original 3dmigoto repository the NMBT-Community repository is meanless. 
-
-Huge thanks to Chiri,DarkStarSword,bo3b and 3Dmigoto original author group.
-
-Special thanks to GIMI&SRMI developer: SilentNightSound and Leotorrez.
+# 感谢
+没有3dmigoto的话这个项目毫无意义。
+感谢Chiri,DarkStarSword,bo3b 和3dmigoto全体作者组。
+感谢SilentNightSound和Leotorrez曾提供的帮助。
