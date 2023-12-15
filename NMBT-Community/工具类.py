@@ -1,4 +1,9 @@
 import json
+import os
+
+class 日志类:
+    def 输出(self, string):
+        print(str(string))
 
 
 class 全局配置类:
@@ -57,7 +62,7 @@ class 游戏配置类:
     工作目录 = ""
 
     模组名称 = ""
-    绘制索引缓冲区哈希值与提取类型 = ""
+    绘制索引缓冲区哈希值与提取类型字典 = {}
 
     读入索引缓冲区格式 = ""
     输出索引缓冲区格式 = ""
@@ -88,6 +93,22 @@ class 游戏配置类:
         self.加载器文件夹 = 游戏配置数据["通用配置"]["加载器文件夹"]
         self.输出文件夹 = 游戏配置数据["通用配置"]["输出文件夹"]
         self.帧分析文件夹 = 游戏配置数据["通用配置"]["帧分析文件夹"]
+        if self.帧分析文件夹 == "最新":
+            filenames = os.listdir(self.加载器文件夹)
+            fa_filenames = []
+            for filename in filenames:
+                if filename.startswith("FrameAnalysis-"):
+                    fa_filenames.append(filename)
+
+            fa_filenames.sort()
+            self.帧分析文件夹 =fa_filenames[-1]
+        self.工作目录 = self.加载器文件夹 + self.帧分析文件夹
+        self.模组名称 = 游戏配置数据["通用配置"]["模组名称"]
+        绘制索引缓冲区哈希值与提取类型列表 = str(游戏配置数据["通用配置"]["绘制索引缓冲区哈希值与提取类型"]).split(",")
+        for 绘制索引缓冲区哈希值与提取类型 in 绘制索引缓冲区哈希值与提取类型列表:
+            绘制索引缓冲区哈希值与提取类型对 = 绘制索引缓冲区哈希值与提取类型.split("_");
+            self.绘制索引缓冲区哈希值与提取类型字典[绘制索引缓冲区哈希值与提取类型对[0]] = 绘制索引缓冲区哈希值与提取类型对[1]
+
 
 
 
@@ -100,7 +121,7 @@ class 游戏配置类:
         print("工作目录: " + str(self.工作目录))
 
         print("模组名称: " + self.模组名称)
-        print("绘制索引缓冲区哈希值与提取类型: " + self.绘制索引缓冲区哈希值与提取类型)
+        print("绘制索引缓冲区哈希值与提取类型: " + str(self.绘制索引缓冲区哈希值与提取类型字典))
 
         print("读入索引缓冲区格式: " + self.读入索引缓冲区格式)
         print("输出索引缓冲区格式: " + self.输出索引缓冲区格式)
@@ -116,6 +137,7 @@ class 游戏配置类:
         print("蓝: " + str(self.蓝))
         print("阿尔法: " + str(self.阿尔法))
 
+
         print("语义_D3D11元素类字典: " + str(self.语义_D3D11元素类字典))
         print("提取语义_D3D11元素类字典: " + str(self.提取语义_D3D11元素类字典))
         print("帧分析文件列表: " + str(self.帧分析文件列表))
@@ -123,11 +145,13 @@ class 游戏配置类:
         print("独特纹理目录: " + str(self.独特纹理目录))
 
 
-
-
-
-    def find_filename_with_condition(self, search_str, suffix_str, search_folder=""):
+    def 根据条件查找文件名(self, search_str, suffix_str, search_folder=""):
         pass
+
+
+
+
+
 
 
 class TmpConfig:
