@@ -1,26 +1,37 @@
-# NMBT-社区版
-一些用来制作3Dmigoto 模组的Python脚本
+# NMBT-Community
+Python scripts for making 3D game gpu hook mod with 3Dmigoto.
 
-# 如何使用
-尽量使用Release里的版本，因为main里面正在开发
+This repository is a community version of my close source mod tool NMBT.
 
-非常推荐使用PyCharm或者VSCode去运行代码，除非你不觉得使用系统自带的笔记本比较麻烦
+# How to use
+(Warning: almost all code is writen in Chinese, you need to switch your system language and region language 
+to Chinese-Simplified and make it support unicode and UTF-8 code,so you can get the right code.)
 
-(Pycharm 下载地址: https://www.jetbrains.com/pycharm/download/?section=windows)
+Please always use released version,main branch is only used in developing and may have bug (but also new features).
 
-(Visual Studio Code 下载地址: https://code.visualstudio.com/)
+NMBT-Community is highly recommend to use with PyCharm Community or VSCode,and it will save you a lot of time,
+but you can also use notepad to edit config and right click to run if you don't care it is cumbersome.
 
-推荐开发环境
-- Windows 10 or 11 专业版
+(Pycharm Download link: https://www.jetbrains.com/pycharm/download/?section=windows)
+(Visual Studio Code Download link: https://code.visualstudio.com/)
+
+These scripts is designed to work with 3DmigotoManager, we use them together to increase mod make speed.
+
+Recommend Enviorment:
+- Windows 10 or 11 
 - Pycharm Community or Visual Studio Code
-- Python 3.9.x 以上的版本
+- Python 3.9.x or later
+- 3DmigotoManager https://github.com/StarBobis/3DmigotoManager
 
 
-# 抱团水群
+# Community
+3Dmigoto Mod Art community (3MA)
 https://discord.gg/JEcWVKr7wu
 
 
-# 感谢
-没有3dmigoto的话这个项目毫无意义。
-感谢Chiri,DarkStarSword,bo3b 和3dmigoto全体作者组。
-感谢SilentNightSound和Leotorrez曾提供的帮助。
+# Acknowledgements
+Without their original 3dmigoto repository the NMBT-Community repository is meanless. 
+
+Huge thanks to Chiri,DarkStarSword,bo3b and 3Dmigoto original author group.
+
+Special thanks to GIMI&SRMI developer: SilentNightSound and Leotorrez.

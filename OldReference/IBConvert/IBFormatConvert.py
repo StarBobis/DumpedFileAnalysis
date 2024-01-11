@@ -3,7 +3,7 @@ import struct
 
 # 解析配置文件
 preset_config = configparser.ConfigParser()
-preset_config.read("Configs/preset.ini", "utf-8")
+preset_config.read("Config/preset.ini", "utf-8")
 
 # 读取ib文件路径
 ib_file_path = preset_config["General"]["ib_file_path"]

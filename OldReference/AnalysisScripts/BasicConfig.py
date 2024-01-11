@@ -21,7 +21,7 @@ import re
 
 
 global_config = configparser.ConfigParser()
-global_config.read("Configs/global_config.ini", "utf-8")
+global_config.read("Config/global_config.ini", "utf-8")
 config_folder = global_config["Global"]["config_folder"]
 
 preset_config = configparser.ConfigParser()

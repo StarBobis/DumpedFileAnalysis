@@ -1,53 +1,3 @@
-import os
-
-
-class GlobalConfig:
-    OutputFolder = "C:/downloadXunlei/Zenless_Zone_Zero_(Beta)/Mods/output/"
-    LoaderFolder = "C:/downloadXunlei/Zenless_Zone_Zero_(Beta)/"
-    FrameAnalysisFolder = "latest"
-    WorkFolder = ""
-
-    FrameAnalysisFilenameList = []
-
-    def __init__(self):
-
-        # auto get latest FrameAnalysisFolder from LoaderFolder
-        if self.FrameAnalysisFolder == "latest":
-            filenames = os.listdir(self.LoaderFolder)
-            frame_analysis_filename_list = []
-            for filename in filenames:
-                if filename.startswith("FrameAnalysis-"):
-                    frame_analysis_filename_list.append(filename)
-
-            frame_analysis_filename_list.sort()
-            self.FrameAnalysisFolder = frame_analysis_filename_list[-1]
-        # set WorkFolder
-        self.WorkFolder = self.LoaderFolder + self.FrameAnalysisFolder + "/"
-
-        # read every filename.
-        self.FrameAnalysisFilenameList = os.listdir(self.WorkFolder)
-
-    def find_filename_by_condition(self, contain_str, suffix_str, search_dir=""):
-        filename_list = []
-        if search_dir == "":
-            filename_list = os.listdir(self.WorkFolder)
-        else:
-            filename_list = os.listdir(search_dir)
-        search_filename_list = []
-        for filename in filename_list:
-            if filename.find(contain_str) != -1 and filename.endswith(suffix_str):
-                search_filename_list.append(filename)
-        return search_filename_list
-
-
-
-class VertexDataLine:
-    pass
-
-
-class D3D11Element:
-    pass
-
 
 class IndexBufferFile:
     # Attributes in filename
@@ -95,21 +45,3 @@ class IndexBufferFile:
         print("IndexCount: " + self.IndexCount)
         print("Topology: " + self.Topology)
         print("Format: " + self.Format)
-
-
-class VertexBufferFile:
-    FileName = ""
-    Index = ""
-    Hash = ""
-    Stride = ""
-    VertexCount = ""
-    Topology = ""
-
-
-class FmtFile:
-    pass
-
-
-
-
-

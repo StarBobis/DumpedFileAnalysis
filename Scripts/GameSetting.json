@@ -1,0 +1,50 @@
+{
+  "GI": {
+    "FrameAnalyseFolder": "latest",
+    "OutputFolder": "C:/3DmigotoLoaders/GI/Mods/output/",
+    "LoaderFolder": "C:/3DmigotoLoaders/GI/",
+    "BackUp": false,
+    "DeleteOutputFolder": true,
+    "VertexShaderCheckSlots": ""
+  },
+  "HI3": {
+    "FrameAnalyseFolder": "latest",
+    "OutputFolder": "C:/3DmigotoLoaders/HI3/Mods/output/",
+    "LoaderFolder": "C:/3DmigotoLoaders/HI3/",
+    "BackUp": false,
+    "DeleteOutputFolder": true,
+    "VertexShaderCheckSlots": ""
+  },
+  "HSR": {
+    "FrameAnalyseFolder": "latest",
+    "OutputFolder": "C:/3DmigotoLoaders/HSR/Mods/output/",
+    "LoaderFolder": "C:/3DmigotoLoaders/HSR/",
+    "BackUp": false,
+    "DeleteOutputFolder": true,
+    "VertexShaderCheckSlots": ""
+  },
+  "NBP": {
+    "FrameAnalyseFolder": "latest",
+    "OutputFolder": "C:/3DmigotoLoaders/NBP_DEV/Mods/output/",
+    "LoaderFolder": "C:/3DmigotoLoaders/NBP_DEV/",
+    "BackUp": false,
+    "DeleteOutputFolder": true,
+    "VertexShaderCheckSlots": "ps-t7,vb1,ib"
+  },
+  "KALABIYAU": {
+    "FrameAnalyseFolder": "latest",
+    "OutputFolder": "C:/Users/Administrator/Desktop/3DmigotoMod/KALABIYAU/Mods/output/",
+    "LoaderFolder": "C:/Users/Administrator/Desktop/3DmigotoMod/KALABIYAU/",
+    "BackUp": false,
+    "DeleteOutputFolder": true,
+    "VertexShaderCheckSlots": "vb0,vb1,vb2,vb3,vb4,ib"
+  },
+  "ZZZ": {
+    "FrameAnalyseFolder": "latest",
+    "OutputFolder": "C:/downloadXunlei/Zenless_Zone_Zero_(Beta)/Mods/output/",
+    "LoaderFolder": "C:/downloadXunlei/Zenless_Zone_Zero_(Beta)/",
+    "BackUp": false,
+    "DeleteOutputFolder": true,
+    "VertexShaderCheckSlots": ""
+  }
+}
