@@ -1,6 +1,6 @@
 # Extract Model from FrameAnalyseFolder.
-from Scripts.Config.FmtFile import *
-
+from Config.GameConfig import *
+from Config.IndexBufferFile import *
 
 if __name__ == "__main__":
     game_config = GameConfig()
