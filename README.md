@@ -1,3 +1,7 @@
+# Archived
+
+Python is hard to use in analysis different type of binary files,but C++ is better and works great, so I trun all develop into MMT ,so this project now archived.
+
 # MMT-Community
 Python scripts for making 3D game gpu hook mod with 3Dmigoto.
 
